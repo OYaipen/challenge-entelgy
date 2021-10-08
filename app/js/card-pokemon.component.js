@@ -19,7 +19,7 @@ class PokemonCard extends HTMLElement {
       text-align: center;
     }
     .card--pokemon {
-      border-top: 0.3125rem solid var(--facebook);
+      border-top: 0.3125rem solid var(--yellow);
     }
     .card__detail {
       align-items: center;
@@ -39,13 +39,15 @@ class PokemonCard extends HTMLElement {
     }
     .card__name {
       color: var(--light-bg);
+      text-transform: uppercase;
       font-weight: 700;
       letter-spacing: -0.125rem;
       line-height: 1;
       margin-bottom: 0.1875rem;
     }
     .card__name--big {
-      font-size: 3.5rem;
+      cursor: pointer;
+      font-size: 2.5rem;
     }
     .card__city {
       color: var(--dark-text1);
@@ -71,22 +73,13 @@ class PokemonCard extends HTMLElement {
       margin-right: 0.25rem;
     }
     </style>
-    <div class="card card--pokemon" id="card__title">
+    <div class="card card--pokemon" >
       <div class="card__detail">
-        <img
-          class="card__icon"
-          src="/images/icon-facebook.svg"
-          alt="icon"
-        />
-        <div class="card__code">@nathanf</div>
+        <div class="card__code" >Order: ${this.data.order}</div>
       </div>
       <div class="card__principal">
-        <div class="card__name card__name--big">${this.data.name}</div>
-        <div class="card__city">Followers</div>
-      </div>
-      <div class="card__change card__change--up">
-        <img class="" src="/images/icon-up.svg" alt="up arrow" />
-        <div class="card__number">12 Today</div>
+        <div class="card__name card__name--big" id="card__title">${this.data.name}</div>
+        <div class="card__city">Type: ${this.data.types[0].type.name.toUpperCase()}</div>
       </div>
     </div>
   `;

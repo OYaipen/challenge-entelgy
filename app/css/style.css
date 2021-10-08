@@ -5,7 +5,7 @@
   --font-inter: "Inter", sans-serif;
   --limegreen: #1db489;
   --brightred: #dc414c;
-  --facebook: #198ff5;
+  --yellow: #fadd00;
   --dark-bg: #1e202a;
   --dark-top-bg: #1f212e;
   --dark-card: #252a41;
@@ -88,68 +88,6 @@ a:visited {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-.card {
-  background: var(--dark-card);
-  border-radius: 0.3125rem;
-  color: var(--dark-text1);
-  flex: 1;
-  overflow: hidden;
-  padding: 1.5625rem;
-  position: relative;
-  text-align: center;
-}
-.card--pokemon {
-  border-top: 0.3125rem solid var(--facebook);
-}
-.card__detail {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1.75rem;
-  margin-top: 0.3125rem;
-}
-.card__icon {
-  margin-right: 0.5rem;
-}
-.card__code {
-  font-size: 0.75rem;
-}
-.card__principal {
-  margin-bottom: 1.5625rem;
-}
-.card__name {
-  color: var(--light-bg);
-  font-weight: 700;
-  letter-spacing: -0.125rem;
-  line-height: 1;
-  margin-bottom: 0.1875rem;
-}
-.card__name--big {
-  font-size: 3.5rem;
-}
-.card__city {
-  color: var(--dark-text1);
-  font-size: 0.75rem;
-  font-weight: 400;
-  letter-spacing: 0.3125rem;
-  text-transform: uppercase;
-}
-.card__change {
-  align-items: center;
-  display: flex;
-  font-size: 0.75rem;
-  font-weight: 700;
-  justify-content: center;
-}
-.card__change--up {
-  color: var(--limegreen);
-}
-.card__change--down {
-  color: var(--brightred);
-}
-.card__change img {
-  margin-right: 0.25rem;
-}
 
 /* footer */
 .attribution {
@@ -205,6 +143,9 @@ a:visited {
   opacity: 1;
   pointer-events: auto;
 }
+.modal__title {
+  text-transform: uppercase;
+}
 .modal__content {
   background: var(--dark-card);
   border-radius: 5px;
@@ -231,6 +172,6 @@ a:visited {
   vertical-align: middle;
 }
 .modal-close-btn {
-  background-color: var(--facebook);
+  background-color: var(--yellow);
   color: #fff;
 }

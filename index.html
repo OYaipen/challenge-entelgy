@@ -16,15 +16,20 @@
     <link rel="stylesheet" href="/app/css/style.css" />
   </head>
   <body>
+    <!-- header -->
     <header class="header container">
       <div class="header__title">
         <h1>Countries App</h1>
         <span class="header__subtitle"> List </span>
       </div>
     </header>
+    <!-- end header -->
+
+    <!-- main component -->
     <main>
       <section class="container cards" id="pokemon-card-container"></section>
     </main>
+
     <footer>
       <div class="attribution">
         Challenge by
@@ -34,9 +39,28 @@
     </footer>
     <div class="modal" id="simple-modal">
       <div class="modal__content">
-        <h1 id="modal-title">Lorem ipsum dolor sit amet, cons</h1>
-        
+        <h1 id="modal-title" class="modal__title">
+          Lorem ipsum dolor sit amet, cons
+        </h1>
+        <img id="modal-image" src="" alt="pokemon" width="100" />
+        <br />
+        <div>
+          <strong>Type: <span id="type"></span></strong>
+        </div>
+        <div>
+          <strong>Order: <span id="order"></span></strong>
+        </div>
+        <div>
+          <strong>Exp: <span id="exp"></span></strong>
+        </div>
+        <div>
+          <strong>Height: <span id="height"></span></strong>
+        </div>
+        <div>
+          <strong>Weight: <span id="weight"></span></strong>
+        </div>
 
+        <br />
         <button id="close-modal" class="btn modal-close-btn">Cerrar</button>
       </div>
     </div>

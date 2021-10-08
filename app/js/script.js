@@ -46,9 +46,18 @@ function renderWebComponents() {
 }
 
 // show modal
-function openModal({ name }) {
+function openModal({ name, sprites, types, order, base_experience, height, weight }) {
   modalElement.classList.add("modal--show");
   modalElement.querySelector("#modal-title").innerText = name;
+  modalElement.querySelector("#modal-image").src =
+    sprites.other.dream_world.front_default;
+  modalElement.querySelector("#type").innerText =
+    types[0].type.name.toUpperCase();
+  modalElement.querySelector("#order").innerText = order;
+  modalElement.querySelector("#exp").innerText = base_experience;
+  modalElement.querySelector("#height").innerText = height;
+  modalElement.querySelector("#weight").innerText = weight;
+
   document.body.style.overflow = "hidden";
 }
 
